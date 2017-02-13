@@ -28,7 +28,7 @@ app.controller("coursesController",function($scope) {
 });
 
 app.controller("studentController",function($scope,$http) {
-    $http.get("http://127.0.0.1:51211/StudentData.json")
+    $http.get("https://sunnyday16.github.io/Angular/StudentData.json")
     .success(function(response) {
         $scope.students=response.records;
     })
