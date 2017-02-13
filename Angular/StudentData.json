@@ -1,0 +1,10 @@
+{
+    "records" :[
+        {"name": "Sunny" , "Age" :"28" ,"Compnay": "TCS"},
+         {"name": "Akshat" , "Age" :"27" ,"Compnay": "TCS"},
+         {"name": "Gagan" , "Age" :"27" ,"Compnay": "TCS"},
+         {"name": "Sumit" , "Age" :"28" ,"Compnay": "?"},
+         {"name": "Rohit" , "Age" :"30" ,"Compnay": "TCS"}
+        
+    ]
+}

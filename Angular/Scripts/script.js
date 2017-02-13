@@ -27,8 +27,11 @@ app.controller("coursesController",function($scope) {
     $scope.courses=["Angular","Java","JavaScript","HTML","CSS"];
 });
 
-app.controller("studentController",function($scope) {
-    $scope.students=["Sunny","Akshat","Gagan","Rohit","Sumit"];
+app.controller("studentController",function($scope,$http) {
+    $http.get("http://127.0.0.1:51211/StudentData.json")
+    .success(function(response) {
+        $scope.students=response.records;
+    })
 });
 app.controller("loginController",function($scope,$location) {
     $scope.submit= function() {
